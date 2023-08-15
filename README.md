@@ -13,22 +13,26 @@ Code/
 README.md
 
 ```
+## Installing R and RStudio
 
-## Dataset
+1. Install R:
 
-Dataset used in this project can be found at https://www.kaggle.com/datasets/jehanbhathena/weather-dataset?resource=download
+R is a programming language and software environment used for statistical computing and graphics.
 
-Dataset contains labeled 6862 images of different types of weather.
+  Visit the official R website: https://cran.r-project.org/
+  Click on the "Download R" link at the top of the page.
+  Select your operating system (Windows, macOS, or Linux) and download the appropriate installer.
+  Run the downloaded installer and follow the on-screen instructions to install R.
 
-The weather dataset is split into 11 folders, one for each class, with each named after the class of images it contains. i.e. all 'rain' images must be in weather/rain/.
+2. Install RStudio:
 
-Our original dataset folder structure will look this.
+RStudio is an integrated development environment (IDE) specifically designed for R.
 
-<img width="728" alt="folders" src="https://github.com/ACM40960/project-Neha-0994/assets/118282077/de518152-3d63-48ed-ae89-a035f07ccf18">
-
-Inside these folder contains images of that particular weather. For example, lightning folder will contain below images.
-
-<img width="647" alt="lightning" src="https://github.com/ACM40960/project-Neha-0994/assets/118282077/eff60ef3-6d39-437d-b140-42eedd3ff49c">
+  Visit the official RStudio website: https://www.rstudio.com/
+  Click on the "Products" menu and select "RStudio Desktop."
+  Choose the "Free" version, which is sufficient for most users.
+  Download the appropriate installer for your operating system (Windows, macOS, or Linux).
+  Run the downloaded installer and follow the on-screen instructions to install RStudio.
 
 ## Prerequisite
 
@@ -41,7 +45,7 @@ install.packages("ggplot2) #To plot the learning curves
 install.packages("grDevices")  #To Plot accuracy and loss
 
 ```
-To import the above packages run the following code - 
+Import the above packages by running the following code - 
 ```
 library(jpeg)
 library(reticulate)
@@ -50,13 +54,31 @@ library(ggplot2)
 library(grDevices)
 ```
 
+## Dataset
+
+Dataset used in this project can be found at https://www.kaggle.com/datasets/jehanbhathena/weather-dataset?resource=download
+
+Dataset contains labeled 6862 images of different types of weather.
+
+The weather dataset is split into 11 folders, one for each class, with each named after the class of images it contains. i.e. all 'rain' images must be in weather/rain/.
+
+Our original dataset folder structure will look this.
+
+![filesssnip](https://github.com/ACM40960/project-sarveshsn/assets/93898181/58f280d9-026f-4d17-af6d-12efcb32e78e)
+
+Inside these folder contains images of that particular weather. For example, lightning folder will contain below images.
+
+<img width="647" alt="lightning" src="https://github.com/ACM40960/project-Neha-0994/assets/118282077/eff60ef3-6d39-437d-b140-42eedd3ff49c">
+
+
 ## Data preparation
 
 We must split the dataset into train, validation and test prior training the model. We will split the original dataset into folders like train, test and validation. Each of these 3 folders will contain the weather categories folders similar to original dataset folder.
 
 File Data_preprocessing.R will split the folders into train, test and validation folder. Our new dataset will look like this.
 
-<img width="317" alt="division" src="https://github.com/ACM40960/project-Neha-0994/assets/118282077/8666fc0b-e0e3-436f-9091-b3d2719fa965">
+![filesssnip2](https://github.com/ACM40960/project-sarveshsn/assets/93898181/cf0f2425-6036-485f-90eb-3a2c2aa67edd)
+
 
 ## CNN Model
 
