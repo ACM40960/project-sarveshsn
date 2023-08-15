@@ -30,12 +30,25 @@ Inside these folder contains images of that particular weather. For example, lig
 
 <img width="647" alt="lightning" src="https://github.com/ACM40960/project-Neha-0994/assets/118282077/eff60ef3-6d39-437d-b140-42eedd3ff49c">
 
-## Install packages
+## Prerequisite
 
-You need to have following packages installed prior running the code in RStudio.
-* install.packages("keras") - For training CNN model
-* install.packages("ggplot2) - To plot the learning curves
-* install.packages("grDevices") - To Plot accuracy and loss
+You need to have following packages installed prior to running the code in RStudio. You can run this code in the RStudio script/console. 
+```
+install.packages("jpeg") #For loading pictures
+install.packages("reticulate")  #To integrate Python code and libraries into your R environment 
+install.packages("keras")  #For training CNN model
+install.packages("ggplot2) #To plot the learning curves
+install.packages("grDevices")  #To Plot accuracy and loss
+
+```
+To import the above packages run the following code - 
+```
+library(jpeg)
+library(reticulate)
+library(keras)
+library(ggplot2)
+library(grDevices)
+```
 
 ## Data preparation
 
