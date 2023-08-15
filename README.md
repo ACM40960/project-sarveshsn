@@ -39,7 +39,7 @@ RStudio is an integrated development environment (IDE) specifically designed for
 You need to have following packages installed prior to running the code in RStudio. You can run this code in the RStudio script/console. 
 ```
 install.packages("jpeg") #For loading pictures
-install.packages("reticulate")  #To integrate Python code and libraries into your R environment 
+install.packages("reticulate")  #To integrate Python code and libraries into your R environment if not done exclusively.
 install.packages("keras")  #For training CNN model
 install.packages("ggplot2) #To plot the learning curves
 install.packages("grDevices")  #To Plot accuracy and loss
