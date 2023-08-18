@@ -8,7 +8,7 @@ As a solution, the integration of Convolutional Neural Networks (CNNs) into weat
 ```
 
 Literature Review.pdf
-Weather_Image_Classification.pdf
+Weather_Image_Classification.pdf (Presentation)
 
 Code/
 ├─ Data_preparation.R
