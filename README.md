@@ -1,6 +1,8 @@
 # Weather Image Classification
 
-In this project, our goal is to create an image classifier that can categorise various weather images.  Traditional methods rely on human observations which can a take a long time and are prone to errors. Weather classification is very useful, for example, in development of self-driving cars, smart transportation systems, and outdoor vision systems. Given an input image, this image classifier will be quick to predict the weather.
+Weather Image Classification holds significant significance in the realms of meteorology and computer vision, offering far-reaching implications that span a diverse array of activities, including weather forecasting, environmental monitoring, and disaster preparedness. The prevailing techniques predominantly hinge on human interpretations, a factor that can potentially introduce inaccuracies and uncertainties. This underscores the pressing need for more advanced methodologies.
+
+As a solution, the integration of Convolutional Neural Networks (CNNs) into weather image classification has emerged as a robust and pragmatic approach. In this project, our primary objective is to develop an image classifier capable of categorizing diverse weather images. Traditional methods often rely on human observations, a process that can be time-consuming and susceptible to errors. The importance of accurate weather classification is underscored by its relevance in the development of self-driving vehicles, intelligent transportation systems, and outdoor vision systems. With the aid of this image classifier, predictions about the prevailing weather conditions can be rapidly and accurately made based on input images. This marks a significant advancement over traditional approaches, enhancing both efficiency and accuracy.
 
 ## Folder Structure
 ```
@@ -62,7 +64,7 @@ Dataset contains labeled 6862 images of different types of weather.
 
 The weather dataset is split into 11 folders, one for each class, with each named after the class of images it contains. i.e. all 'rain' images must be in weather/rain/.
 
-Our original dataset folder structure will look this.
+Our original dataset folder structure will look like this.
 
 ![filesssnip](https://github.com/ACM40960/project-sarveshsn/assets/93898181/58f280d9-026f-4d17-af6d-12efcb32e78e)
 
@@ -73,16 +75,16 @@ Inside these folder contains images of that particular weather. For example, lig
 
 ## Data preparation
 
-We must split the dataset into train, validation and test prior training the model. We will split the original dataset into folders like train, test and validation. Each of these 3 folders will contain the weather categories folders similar to original dataset folder.
+We must split the dataset into train, validation and test prior training the model. We have split the original dataset into folders like train, test and validation. Each of these 3 folders will contain the 11 different weather class folders. The train, testn and validation split is 80-10-10 respectively. 
 
-File Data_preprocessing.R will split the folders into train, test and validation folder. Our new dataset will look like this.
+Running file Data_preprocessing.R will split the folders into train, test and validation folder. Our new dataset will look like this.
 
 ![filesssnip2](https://github.com/ACM40960/project-sarveshsn/assets/93898181/cf0f2425-6036-485f-90eb-3a2c2aa67edd)
 
 
 ## CNN Model
 
-Image classifier is build using Convolutional Neural Network (CNN). We have build a baseline CNN model followed by 2 CNN models with different configurations. Confusion matrix is used to check the precision, recall and F-1 score of these 3 models. These 3 are used as a metric to understand the performance of the model.
+Image classifier is built using Convolutional Neural Network (CNN). We have built a baseline CNN model followed by 2 CNN models with different configurations. Confusion matrix is used to check the precision, recall and F-1 score of these 3 models. These 3 are used as metrics to understand the performance of the model.
 
 ## Usage
 
