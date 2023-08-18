@@ -108,14 +108,26 @@ The additional data augmented images look like this -
 ![Data aug](https://github.com/ACM40960/project-sarveshsn/assets/93898181/a22537cd-c2a9-4e49-9f9a-c62d487289d9)
 
 
+## Project Implementation
 
+•	Execute the Data_preprocessing.R script to partition the dataset into distinct train, test, and validation directories.
 
-## Usage
+•	Proceed to execute the Training.Rmd script for the purpose of training the models. It is crucial to ensure the accuracy of the specified path within your code.
 
-* Run Data_preprocessing.R file to split the dataset into train , test and validation folders.
+Each model is trained for 50 epochs with 100 steps_per_epoch and 50 validation steps. Achieve this by utilizing the provided code.
 
-* Run Training.Rmd file to train the models. Make sure the path is correctly specified in your code.
+Important note: Running the model will necessitate a substantial amount of time and computational resources.
+  ```
+# Fit the model
+fit <- model %>% fit(
+  train_generator,
+  steps_per_epoch = 100,
+  epochs = 50,
+  validation_data = validation_generator,
+  validation_steps = 50
+)
 
+```
 
 
 
