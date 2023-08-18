@@ -86,6 +86,30 @@ Running file Data_preprocessing.R will split the folders into train, test and va
 
 Image classifier is built using Convolutional Neural Network (CNN). We have built a baseline CNN model followed by 2 CNN models with different configurations. Confusion matrix is used to check the precision, recall and F-1 score of these 3 models. These 3 are used as metrics to understand the performance of the model.
 
+CNN Model 1
+
+•	Architecture: Model 1 (our base model) is CNN with 4 convolution layers and 4 max-pooling layers then followed by 2 fully connected layers. The first convolution layer is set with 32 filters and a 3 × 3 kernel with strides 1 (default). Next 3 convolution layers are set with 64 and 128 filters with 3 × 3 kernels. The fully connected layer uses 512 units and ReLU activation function.
+•	Hyperparameters: Learning rate -0.0001 using optimizer - RMSProp
+
+![Model1](https://github.com/ACM40960/project-sarveshsn/assets/93898181/d0cdb497-7e19-44fe-b9f5-3cba198e6e3e)
+
+CNN Model 2
+
+•	Architecture: Four pairs of convolutional layers followed by max-pooling layers.The number of filters increases with depth (64, 128, 256, 512). Additional use of batch normalization and dropout for regularization. Flattening layer followed by two dense (fully connected) layers.
+•	Hyperparameters: Learning Rate: 0.001 (using Adam optimizer).	Batch normalization applied after each convolutional and dense layer. Dropout: 0.25 applied after each max-pooling layer and 0.5 after the first dense layer.
+
+![Model2](https://github.com/ACM40960/project-sarveshsn/assets/93898181/c843c5b1-88d1-4648-a2f9-866fa65545cb)
+
+CNN Model 3 
+
+Model 3 is structurally similar to Model 2, but with the added benefit of data augmentation during training.
+The additional data augmented images look like this - 
+
+![Data aug](https://github.com/ACM40960/project-sarveshsn/assets/93898181/a22537cd-c2a9-4e49-9f9a-c62d487289d9)
+
+
+
+
 ## Usage
 
 * Run Data_preprocessing.R file to split the dataset into train , test and validation folders.
